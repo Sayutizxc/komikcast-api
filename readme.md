@@ -1,12 +1,12 @@
 # Komikcast API
 
-| Url                   | Param         |
-| --------------------- | ------------- |
-| /                     | {page}        |
-| /list-komik           | -             |
-| /detail/komik         | url           |
-| /detail/komik/chapter | url           |
-| /search               | keyword, page |
+| Url                   | Param           | Type           |
+| --------------------- | --------------- | -------------- |
+| /                     | {page}          | Number         |
+| /list-komik           | -               | -              |
+| /detail/komik         | url             | url            |
+| /detail/komik/chapter | url             | url            |
+| /search               | keyword, {page} | String, Number |
 
 ---
 
@@ -14,6 +14,7 @@
 
 ```http
   http://127.0.0.1:3000/
+  http://127.0.0.1:3000/{page}
   http://127.0.0.1:3000/2
 ```
 
